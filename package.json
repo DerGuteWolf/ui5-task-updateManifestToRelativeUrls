@@ -1,7 +1,7 @@
 {
     "name": "ui5-task-updateManifestToRelativeUrls",
     "version": "1.0.0",
-    "description": "Custom task for ui5-builder which allows automated upload, translation and download of i18n properties files to/from SAP Translation Hub Service",
+    "description": "Custom task for ui5-builder which translates OData URLs in manifest.json to appropriate relative URLs for SAP BTP Deployment",
     "main": "lib/updateManifestToRelativeUrls.js",
     "scripts": {
         "preversion": "npm test",
@@ -25,11 +25,6 @@
     "dependencies": {
         "@ui5/fs": "2.0.6",
         "@ui5/logger": "2.0.1",
-        "axios": "^0.21.1",
-        "axios-cookiejar-support": "^1.0.1",
-        "tough-cookie": "^4.0.0",
-        "dotenv": "^8.2.0",
-        "form-data": "3.0.0",
-        "unzipper": "0.10.11"
+        "dotenv": "^8.2.0"
     }
 }
