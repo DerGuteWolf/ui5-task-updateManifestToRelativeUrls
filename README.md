@@ -1,4 +1,4 @@
-# ui5-task-translationhub
+# ui5-task-updateManifestToRelativeUrls
 [![REUSE status](https://api.reuse.software/badge/github.com/DerGuteWolf/ui5-task-updateManifestToRelativeUrls)](https://api.reuse.software/info/github.com/DerGuteWolf/ui5-task-updateManifestToRelativeUrls)
 
 ## Description
