@@ -11,19 +11,11 @@ A custom task for [ui5-builder](https://github.com/SAP/ui5-builder) of [UI5 Tool
 ```json
 "devDependencies": {
     // ...
-    "ui5-task-updateManifestToRelativeUrls": "DerGuteWolf/ui5-task-updateManifestToRelativeUrls:^1.0.0"
+    "ui5-task-updateManifestToRelativeUrls": "DerGuteWolf/ui5-task-updateManifestToRelativeUrls:^1.0.1"
     // ...
 },
-"ui5": {
-  "dependencies": [
-    // ...
-    "ui5-task-updateManifestToRelativeUrls",
-    // ...
-  ]
-}
 ```
 
-> As the devDependencies are not recognized by the UI5 tooling, they need to be listed in the `ui5 > dependencies` array. In addition, once using the `ui5 > dependencies` array you need to list all UI5 tooling relevant dependencies.
 
 2. configure it in `$yourapp/ui5-deploy.yaml` (cf. Configuration Options above):
 
@@ -33,7 +25,7 @@ If you do not have the `$yourapp/ui5-deploy.yaml` file already, it can be genera
 builder:
   customTasks:
     - name: ui5-task-updateManifestToRelativeUrls
-      beforeTask: generateManifestBundle
+      beforeTask: escapeNonAsciiCharacters
 ```
 
 ## How to obtain support
