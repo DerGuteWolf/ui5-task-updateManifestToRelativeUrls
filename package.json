@@ -1,6 +1,6 @@
 {
     "name": "ui5-task-updateManifestToRelativeUrls",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Custom task for ui5-builder which translates OData URLs in manifest.json to appropriate relative URLs for SAP BTP Deployment",
     "main": "lib/updateManifestToRelativeUrls.js",
     "scripts": {
